@@ -1,0 +1,201 @@
+\bibliography{referencias}
+\documentclass{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{longtable}
+ 
+% Configuración del tema
+\usetheme{Madrid}
+
+% Información de la portada
+\title[Nombre del Proyecto]{\textbf{Dispositivo analizador de nutrientes en los cultivos de cebada}}
+\author[Autores]{ Integrantes: \\Diego Albino Sánchez Lazcano \\ Maria Fernanda Castillo Ortega \\ José Manuel Martínez Martínez \\ Kevin Yael Vera Hernández\\
+\textbf{Asesor: Jesús García Blancas}}
+
+\institute[Institución]{\includegraphics[width=0.2\textwidth]
+\textbf{Instituto Tecnológico Superior del Oriente del Estado de Hidalgo} \\
+\textbf{Ingeniería Mecatrónica}}
+
+\date{\today}
+
+\begin{document}
+
+% Portada
+\begin{frame}
+    \titlepage
+    
+\end{frame}
+
+% Índice
+\begin{frame}{Contenido}
+    \tableofcontents
+\end{frame}
+
+% Sección: Antecedentes
+\section{Antecedentes}
+\begin{frame}{Antecedentes}
+    Aquí se describe el contexto y la historia del problema de investigación.
+\end{frame}
+
+% Sección: Planteamiento del Problema
+\section{Planteamiento del Problema}
+\begin{frame}{Planteamiento del Problema}
+    Según algunos integrantes de la Agrupación de Agricultores y Productores de la Altiplanicie, afirmaron que desde el 2022, los horticultores de la región enfrentan problemas de baja productividad en sus cultivos de cebada, debido principalmente a la sequía y otros factores climatológicos , lo que afecta de manera directa en obtener una fertilización adecuada, lo que repercute negativament en el desarroll de las plantas impactando en la cantidad y calidad de producción.
+\end{frame}
+
+% Sección: Objetivos
+\section{Objetivos}
+\begin{frame}{Objetivos}
+    \textbf{Objetivo General:} \\ Construir un prototipo analizador de nutrientes de cultivos mediente la integración de sensores y monitoreo de datos para optimizar la productividad y mejorar la calidad de los cultivos a través de un control preciso de sus condiciones nutricionales.
+    \vspace{0.5cm}
+
+    \textbf{Objetivos Específicos:}
+    \begin{itemize}
+        \item Realizar una investigación sobre las necesidades nutricionales de los cultivos de cebada y las tecnologías actuales utilizadas para el monitoreo. 
+        \item Crear un dispositivo portátiles de sensores para la medición precisa de nutrientes en el suelo. 
+        \item Validar el prototipo mediente experimentación en condiciones de campo, evaluando su efectividad y precisión.
+    \end{itemize}
+\end{frame}
+
+% Sección: Justificación
+\section{Justificación}
+\begin{frame}{Justificación}
+   El análisis del suelo es una herramienta fundamental que permite identificar deficiencias nutricionales y establecer recomendaciones precisas de fertilización. Un analizador de nutrientes para cultivos de cebada proporcionará a los agicultores una solución precisa para evaluar el estado nutricional de sus cultivos, facilitano así la optimización en el uso de fertilizantes y otros insumos agrícolas lo que resultará en un mayor rendimiento y mejor calidad de la cosecha.
+\end{frame}
+
+% Sección: Hipótesis
+
+\section{Hipótesis}
+\begin{frame}{Hipótesis}
+La optimización de la fertilización a través del análisis de nutrientes puede aumentar significativamente el remedio de la cebada, lo que se traduce en mayores ganancias para los agricultores.
+El desarrollo de un dispositivo basado en un sensor NPK y un ESP32 T-SIM76000G para la recolección y monitoreo de datos de nitrientes en cultivos de cebada permitirá a los agricultores aptimizar la fertiliación y mejorar la calidad y eficiencia de sus cosechas, al proporcionar información en tiempo real sobre el estado del suelo.
+
+
+\end{frame}
+% Sección: Marco Teórico
+
+\section{Marco Teórico}
+\begin{frame}{Marco Teórico}
+    Desarrollo de las bases conceptuales y revisión de literatura. Ejemplo de fórmula:
+    \begin{equation}
+        F = q(E + v \times B)
+    \end{equation}
+    Donde $F$ es la fuerza, $q$ la carga, $E$ el campo eléctrico y $B$ el campo magnético.
+\end{frame}
+
+% Sección: Metodología
+\section{Metodología}
+\begin{frame}{Metodología}
+    Listado de materiales.
+\begin{longtable}{|c|c|c|}
+    \hline
+    \textbf{Cantidad} & \textbf{Material}  \\
+    \hline
+    1 & Sensor NPK (5 pines) \\ 
+    \hline
+    1 & T-sim7600g  \\
+    \hline
+    1 & Arduino Uno R4 WiFi  \\
+    \hline
+    1 & Pantalla (Tft Pantalla)\\
+    \hline
+    1 & Dashboard en Blynk\\
+    \hline
+    1 & Impresora 3d creality ender 3\\
+    \hline
+    1 & Filamento PLA\\
+    \hline
+    1 &  Batería tipo de 7.5v 2000mA\\   
+    \hline
+    1 &  Sim de telefonico\\
+    \hline
+
+\end{longtable}
+\end{frame}
+
+\section{Metodología}
+\begin{frame}{Procedimiento}
+   {Paso 1. Planificación y Diseño}\\
+
+En esta fase se establece la base del proyecto, definiendo los objetivos específicos y los componentes necesarios para su implementación. Se inicia con la identificación de los parámetros a medir como son el pH, humedad, temperatura, y principalemte la concentración de nutrientes. Posteriormente, se procede a la selección de cada uno de los sensores adecuados para cada uno de las variables a medir, asegurandose, principalmente la compatibilidad con Arduino.\\
+
+\end{frame}
+
+\section{Metodología}
+\begin{frame}{Procedimiento}
+ {Paso 2. Montaje del Hardware.}\\
+
+En esta etapa se se hace la conexión física de los componentes electrónicos. Como primer paso se inicia montando el Arduino Uno R4 WiFi en una protoboard con la finalidad de facilitar las conexiones temporales y dar inicio a las pruebas iniciales. Posteriormente se procede a conectar los sensores a utilizar, además una pantalla para la visualización de los datos leídos.\\
+
+\end{frame} 
+
+\section{Metodología}
+\begin{frame}{Procedimiento}
+{Paso 3. Programación del Sistema.}\\
+
+En esta fase se procede a desarrollar el código para el funcionamiento del sistema haciendo uso de Arduino IDE. En este se establece el código el cual permitirá la lectura de las mediciones de los sensores usados, de igual manera, se deben de establecer los métodos de conversión y calibración de los mismos.
+Paso seguido, se integra la función de la conexión WiFi, ademas de la conexión 4G mediante el módulo SIM7600G, esto en caso de estar fuera de una red inalámbrica.
+Esto no ayudará en la obtención y envío de datos hacia la plataforma seleccionada.\\
+
+\end{frame}
+
+\section{Metodología}
+\begin{frame}{Procedimiento}
+{Paso 4. Pruebas y Calibración.}\\
+
+Una vez montado y compilado el código se procede a la realización de diversas pruebas en diferentes contextos, es decir, midiendo soluciones con diferentes concentraciones de pH, ademas de la lectura de nutrientes obtenidos en comparación con los obtenidos con análisis de laboratorio.
+De igual manera, se verifica la correcta funcionalidad sobre la conexión WiFi y 4G verificando que la transmisión y recpeción de datos se dé de la mejor manera. 
+Todo esto en conjunto debe ser de manera correcta para obtener un rendimiento positivo del sistema en general.\\
+
+\end{frame}  
+
+\section{Metodología}
+\begin{frame}{Procedimiento}
+{Paso 5. Análisis de Resultados.}\\
+
+Se realiza el análisis de los datos obtenidos, comparando cada uno de ellos con los obtenidos en laboratorio, con la finalidad de poder evaluar y determinar su precisión.
+De igual manera, se debe observar el comportamiento del sistema bajo diversas condiciones, de tal manera de poder verificar la capacidad para adaptarse a las diversas variaciones en de las variables a medir.\\
+
+\end{frame}  
+
+% Sección: Cronograma de Actividades
+\section{Cronograma de Actividades}
+\begin{frame}{Cronograma de Actividades}
+    \begin{tabular}{|c|c|c|}
+        \hline
+        \textbf{Actividad} & \textbf{Responsable} & \textbf{Duración (días)} \\
+        \hline
+        Actividad 1 & Responsable 1 & 10 \\
+        \hline
+        Actividad 2 & Responsable 2 & 5 \\
+        \hline
+        Actividad 3 & Responsable 3 & 7 \\
+        \hline
+    \end{tabular}
+\end{frame}
+
+% Sección: Fuentes de Consulta
+\section{Fuentes de Consulta}
+\begin{frame}{Fuentes de Consulta}
+    \begin{itemize}
+        \item Autor A. (Año). Título del libro o artículo. Editorial.
+        \item Autor B. (Año). Título del libro o artículo. Editorial.
+        \item Sitio web: \url{https://ejemplo.com}
+    \end{itemize}
+\end{frame}
+
+% Sección: Anexos
+\section{Anexos}
+\begin{frame}{Anexos}
+    Material adicional como imágenes, tablas o diagramas.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{Logo_IM_origina.png}
+        \caption{Ejemplo de imagen.}
+        \label{fig:ejemplo}
+    \end{figure}
+\end{frame}
+
+\end{document}
